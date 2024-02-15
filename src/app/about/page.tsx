@@ -82,7 +82,10 @@ export default async function About() {
 
           <p className="leading-7">
             Source code:{" "}
-            <a href="www.google.com" className="text-blue-500">
+            <a
+              href="https://github.com/JuliusMieliauskas/7MAG"
+              className="text-blue-500"
+            >
               Github
             </a>
           </p>
