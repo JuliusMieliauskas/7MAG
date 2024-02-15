@@ -28,7 +28,7 @@ export default async function Page({ params }: PageProps) {
   const lastEarnings = getLastEarnings(companyData.earnings, 5)
 
   return (
-    <div className="w-5/6 flex flex-col lg:w-2/3 mt-10 mb-32 md:mt-16 gap-y-4">
+    <div className="w-5/6 flex flex-col lg:w-2/3 mt-10 mb-8 md:mt-16 gap-y-4">
       <div className="w-full md:w-1/2 flex justify-center sm:justify-start gap-x-4 md:gap-x-10 items-center mb-4 md:mb-6">
         <div className="block md:hidden">
           <CompanyLogo company={params.companyName} height={20} />
@@ -72,7 +72,7 @@ export default async function Page({ params }: PageProps) {
         <PriceGraph historicalPrice={companyData.historicalPrice} />
       </div>
       <KeyMetricsCard {...companyData.quote} />
-      <div className="flex flex-col h-72 xl:h-96 2xl:h-[512px] gap-4 md:flex-row">
+      <div className="flex flex-col md:h-72 xl:h-96 2xl:h-[512px] gap-4 md:flex-row">
         <div className="rounded-lg border bg-card text-card-foreground shadow-sm p-4 md:w-1/2 md:p-8">
           <h3 className="text-xl font-semibold leading-none tracking-tight mb-4 md:mb-6 md:text-2xl lg:text-3xl">
             Earnings

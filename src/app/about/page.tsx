@@ -84,7 +84,7 @@ export default async function Page() {
             Source code:{" "}
             <a
               href="https://github.com/JuliusMieliauskas/7MAG"
-              className="text-blue-500"
+              className="font-semibold"
               target="_blank"
             >
               Github
@@ -92,7 +92,14 @@ export default async function Page() {
           </p>
 
           <p className="leading-7 text-muted-foreground font-semibold">
-            Built by Julius Mieliauskas
+            Built by{" "}
+            <a
+              href="https://www.linkedin.com/in/juliusmieliauskas/"
+              className="text-blue-700 underline"
+              target="_blank"
+            >
+              Julius Mieliauskas
+            </a>
           </p>
         </div>
       </div>

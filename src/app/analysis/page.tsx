@@ -28,7 +28,7 @@ export default async function Page() {
   const companyData = await Promise.all(allCompanies)
 
   return (
-    <div className="flex flex-col justify-center items-center mt-8 md:mt-0 w-3/4 lg:w-2/3 xl:w-1/2 space-y-3 md:space-y-8">
+    <div className="flex flex-col justify-center items-center my-8 md:mt-0 w-3/4 lg:w-2/3 xl:w-1/2 space-y-3 md:space-y-8">
       <h1 className="text-2xl lg:text-3xl text-center xl:text-4xl font-extrabold tracking-tight">
         Choose a stock you want to analyze in detail
       </h1>
