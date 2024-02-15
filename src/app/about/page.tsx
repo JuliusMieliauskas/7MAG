@@ -7,7 +7,7 @@ import ShadCNLogo from "@/static/shadcn_logo.webp"
 import ShadCNLogoDark from "@/static/shadcn_logo_dark.webp"
 import Image from "next/image"
 
-export default async function About() {
+export default async function Page() {
   return (
     <div className="flex flex-col justify-center items-center w-4/5 py-8 md:w-2/3 gap-y-4">
       <div className="flex flex-col justify-center items-start gap-y-6 w-full">
@@ -16,10 +16,10 @@ export default async function About() {
         </h2>
         <p className="leading-7">
           This website is designed to be a simple and easy to use platform for
-          users to find the latest financial information about the "Magnificent
-          7" companies.
+          users to find the latest financial information about the
+          &quot;Magnificent 7&quot; companies.
         </p>
-        <p className="leading-7 mt-4">
+        <div className="leading-7 mt-4">
           The website is built using the following technologies:
           <ul className="my-2 ml-6 list-disc">
             <li>Next.js v14</li>
@@ -27,7 +27,7 @@ export default async function About() {
             <li>Tailwind CSS</li>
             <li>ShadCN</li>
           </ul>
-        </p>
+        </div>
         <div className="w-full flex flex-row items-center justify-center flex-wrap gap-y-4 gap-x-8 md:gap-x-12">
           <Image
             alt="Next Logo"
@@ -67,7 +67,7 @@ export default async function About() {
             className="hidden dark:block"
           />
         </div>
-        <p className="leading-7 mt-6">
+        <div className="leading-7 mt-6">
           Application uses best practices to provide a fast and responsive user
           experience. These include:
           <ul className="my-2 ml-6 list-disc">
@@ -76,7 +76,7 @@ export default async function About() {
             <li>Dynamic routing</li>
             <li>Data caching</li>
           </ul>
-        </p>
+        </div>
         <div className="flex flex-col w-full">
           <p className="leading-7 mt-4">Website is hosted on Vercel.</p>
 
@@ -85,6 +85,7 @@ export default async function About() {
             <a
               href="https://github.com/JuliusMieliauskas/7MAG"
               className="text-blue-500"
+              target="_blank"
             >
               Github
             </a>
