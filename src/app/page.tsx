@@ -1,22 +1,8 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import GoogleLogo from "../static/google_logo.webp"
-import TeslaLogo from "../static/tesla_logo.webp"
-import TeslaLogoDark from "../static/tesla_logo_dark.webp"
-import AmazonLogoDark from "../static/amazon_logo_dark.webp"
-import AmazonLogo from "../static/amazon_logo.webp"
-import MetaLogo from "../static/meta_logo.webp"
-import MetaLogoDark from "../static/meta_logo_dark.webp"
-import AppleLogo from "../static/apple_logo.webp"
-import AppleLogoDark from "../static/apple_logo_dark.webp"
-import MicrosoftLogo from "../static/microsoft_logo.webp"
-import MicrosoftLogoDark from "../static/microsoft_logo_dark.webp"
-import NvidiaLogo from "../static/nvidia_logo.webp"
-import NvidiaLogoDark from "../static/nvidia_logo_dark.webp"
 import { CompanyLogo } from "@/components/company_logo"
 import { useRouter } from "next/navigation"
-import Image from "next/image"
 
 export default function Home() {
   const router = useRouter()

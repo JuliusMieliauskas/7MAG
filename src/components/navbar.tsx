@@ -27,18 +27,20 @@ export function Navbar() {
   ]
 
   return (
-    <nav className="sticky left-0 top-0 w-full z-50 bg-background shadow-sm border-b">
+    <nav className="fixed left-0 top-0 w-full z-50 bg-background shadow-sm border-b">
       <div className="flex-row justify-around items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <Link href="/">
             <Image
               src={Logo}
+              priority={true}
               width={96}
               alt="Logo"
               className="block dark:hidden"
             />
             <Image
               src={LogoDark}
+              priority={true}
               width={96}
               alt="Logo"
               className="hidden dark:block"

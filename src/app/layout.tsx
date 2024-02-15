@@ -21,9 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider attribute="class">
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center min-h-screen">
             <Navbar />
-            <main className="w-full min-h-screen flex justify-center h-full">
+            <main className="w-full pt-12 flex justify-center h-full">
               {children}
 
               <SpeedInsights />

@@ -19,12 +19,14 @@ export function CompanyLogo(props: { company: string; height?: number }) {
   return (
     <>
       <Image
+        priority={true}
         src={getLogoLight(props.company)}
         alt={`${props.company} Logo`}
         height={props.height ?? 42}
         className="block dark:hidden"
       />
       <Image
+        priority={true}
         src={getLogoDark(props.company)}
         alt={`${props.company} Logo`}
         height={props.height ?? 42}

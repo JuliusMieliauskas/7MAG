@@ -30,20 +30,28 @@ export default async function Page() {
         </div>
         <div className="w-full flex flex-row items-center justify-center flex-wrap gap-y-4 gap-x-8 md:gap-x-12">
           <Image
+            priority={true}
             alt="Next Logo"
             src={NextLogo}
             width={128}
             className="dark:hidden"
           />
           <Image
+            priority={true}
             alt="Next Logo"
             src={NextLogoDark}
             width={128}
             className="hidden dark:block"
           />
-          <Image alt="TS Logo" src={TypescriptLogo} width={48} />
+          <Image
+            alt="TS Logo"
+            src={TypescriptLogo}
+            width={48}
+            priority={true}
+          />
           <Image
             alt="TW Logo"
+            priority={true}
             src={TailwindLogo}
             width={128}
             className="dark:hidden"
@@ -52,17 +60,20 @@ export default async function Page() {
             alt="TW Logo"
             src={TailwindLogoDark}
             width={128}
+            priority={true}
             className="hidden dark:block"
           />
           <Image
             alt="ShadCN Logo"
             src={ShadCNLogo}
+            priority={true}
             width={128}
             className="dark:hidden"
           />
           <Image
             alt="ShadCN Logo"
             src={ShadCNLogoDark}
+            priority={true}
             width={128}
             className="hidden dark:block"
           />
