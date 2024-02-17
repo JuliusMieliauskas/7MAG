@@ -23,6 +23,16 @@ export default function Home() {
         Get Started
       </Button>
       <Logos />
+      <div className="flex mt-6 font-semibold">
+        Built by:&nbsp;
+        <a
+          className="font-bold text-muted-foreground text-base underline"
+          href="https://github.com/JuliusMieliauskas/7MAG"
+          target="_blank"
+        >
+          Julius Mieliauskas
+        </a>
+      </div>
     </div>
   )
 }
