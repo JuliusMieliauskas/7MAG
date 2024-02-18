@@ -9,7 +9,7 @@ import { ArrowBigDownDash, ArrowBigUpDash } from "lucide-react"
 import { PriceGraph } from "@/components/analysis/price-graph"
 import { KeyMetricsCard } from "@/components/analysis/key-metrics"
 import { DividendsChart } from "@/components/analysis/dividends-chart"
-
+import { PerformanceTable } from "@/components/analysis/price-changes"
 interface PageProps {
   params: { companyName: string }
 }
@@ -71,6 +71,7 @@ export default async function Page({ params }: PageProps) {
       <div className="rounded-lg border bg-card text-card-foreground shadow-sm p-2 w-full md:p-8">
         <PriceGraph historicalPrice={companyData.historicalPrice} />
       </div>
+      <PerformanceTable {...companyData.priceChanges} />
       <KeyMetricsCard {...companyData.quote} />
       <div className="flex flex-col md:h-72 xl:h-96 2xl:h-[512px] gap-4 md:flex-row">
         <div className="rounded-lg border bg-card text-card-foreground shadow-sm p-4 md:w-1/2 md:p-8">
